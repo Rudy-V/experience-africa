@@ -1,42 +1,102 @@
-/* static/css/style.css */
+*,
+*::before,
+*::after {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 body {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  background: #f8f9fa;
-  color: #333;
+  background-color: #e8dac3; /* page background */
+  color: #214e34; /* default font color */
 }
 
-header {
-  background: #0044cc;
-  color: white;
-  padding: 1rem;
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #214e34;
 }
 
-header h1 {
-  margin: 0;
+/* Paragraphs & text */
+p,
+span,
+li,
+a {
+  font-weight: 400;
+  color: #000; /* default body text */
 }
 
-nav a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
+/* ==============================
+   Override Bootstrap Colours
+   ============================== */
+
+/* Backgrounds */
+.bg-dark {
+  background-color: #214e34 !important; /* dark green */
 }
 
-nav a:hover {
-  text-decoration: underline;
+.bg-light {
+  background-color: #f8f0e5 !important; /* cream */
 }
 
-main {
-  padding: 2rem;
+/* Text */
+.text-dark {
+  color: #214e34 !important;
 }
 
+.text-light {
+  color: #f8f0e5 !important; /* off white */
+}
+
+/* Navbar */
+.navbar,
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #214e34 !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #490642 !important;
+}
+
+/* Footer */
 footer {
-  background: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  background-color: #f8f0e5;
+  color: #214e34;
+}
+
+/* ==============================
+   Buttons
+   ============================== */
+
+/* Primary button */
+.btn-primary {
+  background-color: #214e34;
+  border-color: #214e34;
+  color: #f8f0e5;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #490642;
+  border-color: #490642;
+  color: #f8f0e5;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #490642;
+  border-color: #490642;
+  color: #f8f0e5;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #214e34;
+  border-color: #214e34;
+  color: #f8f0e5;
 }
