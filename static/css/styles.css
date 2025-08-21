@@ -16,8 +16,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
   color: #214e34;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 600;
 }
 
 /* Paragraphs & text */
@@ -27,6 +43,7 @@ li,
 a {
   font-weight: 400;
   color: #000; /* default body text */
+  font-size: 14px;
 }
 
 /* ==============================
@@ -56,6 +73,7 @@ a {
 .navbar-brand,
 .navbar-nav .nav-link {
   color: #214e34 !important;
+  font-weight: 500;
 }
 
 .navbar-nav .nav-link.active,
@@ -75,28 +93,38 @@ footer {
 
 /* Primary button */
 .btn-primary {
-  background-color: #214e34;
-  border-color: #214e34;
-  color: #f8f0e5;
+  background-color: #214e34 !important;
+  border-color: #214e34 !important;
+  color: #f8f0e5 !important;
+  font-weight: 500 !important;
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
-  background-color: #490642;
-  border-color: #490642;
-  color: #f8f0e5;
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:active {
+  background-color: #490642 !important;
+  border-color: #490642 !important;
+  color: #f8f0e5 !important;
+  box-shadow: 0 !important;
+  font-weight: 500 !important;
 }
 
 /* Secondary button */
 .btn-secondary {
-  background-color: #490642;
-  border-color: #490642;
-  color: #f8f0e5;
+  background-color: #490642 !important;
+  border-color: #490642 !important;
+  color: #f8f0e5 !important;
+  font-weight: 500 !important;
 }
 
 .btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #214e34;
-  border-color: #214e34;
-  color: #f8f0e5;
+.btn-secondary:focus,
+.btn-secondary:focus-visible,
+.btn-secondary:active {
+  background-color: #214e34 !important;
+  border-color: #214e34 !important;
+  color: #f8f0e5 !important;
+  box-shadow: 0 !important;
+  font-weight: 500 !important;
 }
